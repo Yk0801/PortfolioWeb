@@ -23,14 +23,14 @@ const RecommendationsPage = () => {
       imageUrl: "/placeholder.svg",
       pdfUrl: "#"
     },
-    {
-      content: "I've had the opportunity to collaborate with them on several campus initiatives where they served as a Campus Ambassador. Their communication skills, leadership abilities, and dedication to excellence were evident in every project. They have a natural talent for engaging diverse audiences and building relationships.",
-      author: "Michael Chen",
-      role: "Student Activities Director",
-      company: "University Name",
-      imageUrl: "/placeholder.svg",
-      pdfUrl: "#"
-    }
+    // {
+    //   content: "I've had the opportunity to collaborate with them on several campus initiatives where they served as a Campus Ambassador. Their communication skills, leadership abilities, and dedication to excellence were evident in every project. They have a natural talent for engaging diverse audiences and building relationships.",
+    //   author: "Michael Chen",
+    //   role: "Student Activities Director",
+    //   company: "University Name",
+    //   imageUrl: "/placeholder.svg",
+    //   pdfUrl: "#"
+    // }
   ];
 
   return (

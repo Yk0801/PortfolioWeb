@@ -4,15 +4,24 @@ import ProjectCard from '@/components/ui/ProjectCard';
 
 const ProjectsPage = () => {
   // Sample project data
-  const capstoneProject = {
-    title: "Predictive Analytics for Retail Demand",
-    description: "Capstone project analyzing retail data to predict demand patterns and optimize inventory management using machine learning algorithms.",
-    techStack: ["Python", "Scikit-Learn", "Pandas", "Tableau"],
-    imageUrl: "/placeholder.svg",
-    grade: "A"
-  };
+  // const capstoneProject = {
+  //   title: "Predictive Analytics for Retail Demand",
+  //   description: "Capstone project analyzing retail data to predict demand patterns and optimize inventory management using machine learning algorithms.",
+  //   techStack: ["Python", "Scikit-Learn", "Pandas", "Tableau"],
+  //   imageUrl: "/placeholder.svg",
+  //   grade: "A"
+  // };
   
   const otherProjects = [
+
+    {
+      title: "Market Research for Tavasya",
+      description: "Interactive dashboard visualizing key economic indicators and their correlations over time.",
+      techStack: ["R", "Shiny", "ggplot2", "Economic Data"],
+      imageUrl: "/placeholder.svg",
+      githubUrl: "https://github.com/Yk0801/Tavasya_Market_Research/tree/main",
+      liveUrl: "https://github.com/Yk0801/Tavasya_Market_Research/tree/main"
+    },
     {
       title: "Economic Indicator Dashboard",
       description: "Interactive dashboard visualizing key economic indicators and their correlations over time.",
@@ -52,20 +61,20 @@ const ProjectsPage = () => {
     }
   ];
   
-  const researchProjects = [
-    {
-      title: "Impact of Economic Policies on Market Volatility",
-      description: "Research examining how economic policy announcements affect market volatility in different sectors.",
-      techStack: ["R", "Statistical Analysis", "Economic Theory", "Financial Markets"],
-      imageUrl: "/placeholder.svg"
-    },
-    {
-      title: "Consumer Behavior During Economic Downturns",
-      description: "Analysis of changing consumer spending patterns during periods of economic contraction.",
-      techStack: ["SPSS", "Survey Analysis", "Behavioral Economics", "Regression Analysis"],
-      imageUrl: "/placeholder.svg"
-    }
-  ];
+  // const researchProjects = [
+  //   {
+  //     title: "Impact of Economic Policies on Market Volatility",
+  //     description: "Research examining how economic policy announcements affect market volatility in different sectors.",
+  //     techStack: ["R", "Statistical Analysis", "Economic Theory", "Financial Markets"],
+  //     imageUrl: "/placeholder.svg"
+  //   },
+  //   {
+  //     title: "Consumer Behavior During Economic Downturns",
+  //     description: "Analysis of changing consumer spending patterns during periods of economic contraction.",
+  //     techStack: ["SPSS", "Survey Analysis", "Behavioral Economics", "Regression Analysis"],
+  //     imageUrl: "/placeholder.svg"
+  //   }
+  // ];
 
   return (
     <PageLayout>
@@ -76,7 +85,7 @@ const ProjectsPage = () => {
             subtitle="Explore my academic and professional projects showcasing my skills and interests."
           />
           
-          {/* Capstone Project */}
+          {/* Capstone Project
           <div className="mb-16">
             <h3 className="text-2xl font-bold mb-6 text-navy">Capstone Project</h3>
             
@@ -123,11 +132,11 @@ const ProjectsPage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           
           {/* Other Projects */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold mb-6 text-navy">Additional Projects</h3>
+            <h3 className="text-2xl font-bold mb-6 text-navy">Projects</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {otherProjects.map((project, index) => (
@@ -137,7 +146,7 @@ const ProjectsPage = () => {
           </div>
           
           {/* Research */}
-          <div>
+          {/* <div>
             <h3 className="text-2xl font-bold mb-6 text-navy">Research Work</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -145,7 +154,7 @@ const ProjectsPage = () => {
                 <ProjectCard key={index} {...project} />
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </PageLayout>

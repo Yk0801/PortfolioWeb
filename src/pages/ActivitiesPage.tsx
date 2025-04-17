@@ -54,26 +54,26 @@ const ActivitiesPage = () => {
     }
   ];
   
-  const clubs = [
-    {
-      name: "Data Science Club",
-      role: "Active Member",
-      period: "2022 - Present",
-      activities: "Participate in workshops, collaborate on projects, attend speaker events"
-    },
-    {
-      name: "Economics Society",
-      role: "Events Coordinator",
-      period: "2023 - Present",
-      activities: "Organize guest lectures, coordinate networking events, facilitate discussions"
-    },
-    {
-      name: "Student Leadership Council",
-      role: "Member",
-      period: "2022 - 2023",
-      activities: "Represented department interests, participated in campus policy discussions"
-    }
-  ];
+  // const clubs = [
+  //   {
+  //     name: "Data Science Club",
+  //     role: "Active Member",
+  //     period: "2022 - Present",
+  //     activities: "Participate in workshops, collaborate on projects, attend speaker events"
+  //   },
+  //   {
+  //     name: "Economics Society",
+  //     role: "Events Coordinator",
+  //     period: "2023 - Present",
+  //     activities: "Organize guest lectures, coordinate networking events, facilitate discussions"
+  //   },
+  //   {
+  //     name: "Student Leadership Council",
+  //     role: "Member",
+  //     period: "2022 - 2023",
+  //     activities: "Represented department interests, participated in campus policy discussions"
+  //   }
+  // ];
 
   return (
     <PageLayout>
@@ -167,10 +167,17 @@ const ActivitiesPage = () => {
               ))}
             </div>
           </div>
+          <div className="mt-12 text-center">
+              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+                Extra-curricular activities have been integral to my personal and professional development, 
+                allowing me to apply classroom knowledge in real-world settings while building valuable soft skills 
+                and connections.
+              </p>
+            </div>
         </div>
       </section>
       
-      <section className="section bg-gray-50">
+      {/* <section className="section bg-gray-50">
         <div className="container mx-auto px-4">
           <SectionHeader 
             title="Clubs & Organizations"
@@ -205,7 +212,7 @@ const ActivitiesPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </PageLayout>
   );
 };
