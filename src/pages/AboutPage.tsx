@@ -17,18 +17,42 @@ const AboutPage = () => {
             <div className="lg:col-span-2">
               <div className="prose max-w-none">
                 <h3 className="text-2xl font-bold mb-4 text-navy">My Background</h3>
-                <p className="text-gray-700 mb-4">
-                  I am a passionate data professional with a strong foundation in economics and statistics. My journey began with a deep interest in how data can drive decision-making and create value. Through my academic pursuits and professional experiences, I've developed a diverse skill set that spans data analysis, visualization, and interpretation.
-                </p>
-                
-                <p className="text-gray-700 mb-4">
-                  I hold a degree in [Your Degree] with a focus on data science and economics. My academic training has equipped me with both theoretical knowledge and practical skills that I've applied in various professional contexts.
-                </p>
-                
-                <p className="text-gray-700 mb-6">
-                  Beyond my technical expertise, I'm a collaborative team player who thrives in dynamic environments. I'm constantly learning and exploring new technologies to enhance my capabilities and deliver better results.
-                </p>
-                
+
+                {/* ✅ Updated Education Section */}
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <h2 className="text-2xl font-bold mb-6">Education</h2>
+
+                  <div className="mb-6 border border-gray-200 rounded-lg p-4">
+                    <div className="text-blue-700 font-bold text-lg mb-1">2022 – 2025</div>
+                    <div className="text-lg font-semibold">BBA in Computational Business Analytics</div>
+                    <div className="text-sm text-gray-600 mb-2">Mahindra University</div>
+                    <div className="text-sm text-gray-600 mb-2">Hyderabad, India</div>
+                    <p className="text-gray-700 mt-2">
+                      My academic journey at Mahindra University has been centered around blending data science with business strategy. 
+                      I’ve actively participated in practical learning experiences, leveraging tools like Power BI and Python.
+                      <ul className="list-disc list-inside mt-2">
+                        <li>Current CGPA: 8.25</li>
+                        <li>Relevant Coursework: Data Analytics, Business Intelligence, Applied Statistics, Python Programming, SQL for Business, Operations Research, Marketing Analytics</li>
+                        <li>Hands-on projects using real-world datasets and dashboards</li>
+                      </ul>
+                    </p>
+                  </div>
+
+                  <div className="border border-gray-200 rounded-lg p-4">
+                    <div className="text-blue-700 font-bold text-lg mb-1">2020 – 2022</div>
+                    <div className="text-lg font-semibold">Intermediate (MPC Stream)</div>
+                    <div className="text-sm text-gray-600 mb-2">Sasi Junior College</div>
+                    <div className="text-sm text-gray-600 mb-2">Hyderabad, India</div>
+                    <p className="text-gray-700 mt-2">
+                      My time at Sasi Junior College helped build a strong academic foundation in Mathematics and Science, fostering analytical and logical thinking.
+                      <ul className="list-disc list-inside mt-2">
+                        <li>Scored 955 / 1000 in Mathematics, Physics, and Chemistry</li>
+                        <li>Developed strong analytical and quantitative reasoning skills</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
                 <h3 className="text-2xl font-bold mb-4 text-navy">Core Competencies</h3>
                 <ul className="list-disc pl-5 space-y-2 text-gray-700 mb-6">
                   <li>Data Analysis and Visualization</li>
