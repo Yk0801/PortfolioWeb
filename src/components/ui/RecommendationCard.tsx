@@ -1,4 +1,3 @@
-
 import { Quote } from 'lucide-react';
 
 interface RecommendationCardProps {
@@ -6,7 +5,6 @@ interface RecommendationCardProps {
   author: string;
   role: string;
   company?: string;
-  imageUrl?: string;
   pdfUrl?: string;
 }
 
@@ -15,7 +13,6 @@ const RecommendationCard = ({
   author,
   role,
   company,
-  imageUrl = '/placeholder.svg',
   pdfUrl
 }: RecommendationCardProps) => {
   return (
@@ -25,21 +22,11 @@ const RecommendationCard = ({
       <div className="relative z-10">
         <p className="text-gray-700 mb-6 italic">"{content}"</p>
         
-        <div className="flex items-center">
-          {imageUrl && (
-            <img 
-              src={imageUrl} 
-              alt={author} 
-              className="w-12 h-12 rounded-full object-cover mr-4"
-            />
-          )}
-          
-          <div>
-            <h4 className="font-semibold text-navy">{author}</h4>
-            <p className="text-gray-600 text-sm">
-              {role}{company ? `, ${company}` : ''}
-            </p>
-          </div>
+        <div>
+          <h4 className="font-semibold text-navy">{author}</h4>
+          <p className="text-gray-600 text-sm">
+            {role}{company ? `, ${company}` : ''}
+          </p>
         </div>
         
         {pdfUrl && (
