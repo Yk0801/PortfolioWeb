@@ -53,7 +53,7 @@ const AboutPage = () => {
                   </div>
                 {/* </div> */}
 
-                <h3 className="text-2xl font-bold mb-4 text-navy">Core Competencies</h3>
+                <h3 className="text-2xl font-bold mb- text-navy">Core Competencies</h3>
                 <ul className="list-disc pl-5 space-y-2 text-gray-700 mb-6">
                   <li>Data Analysis and Visualization</li>
                   <li>Statistical Modeling</li>
