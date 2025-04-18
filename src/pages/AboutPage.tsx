@@ -122,54 +122,50 @@ const AboutPage = () => {
         </div>
       </section>
       
-      <section className="section bg-gray-50">
-        <div className="container mx-auto px-4">
-          <SectionHeader 
-            title="Academic Background"
-            subtitle="Core coursework and educational achievements"
-            centered={true}
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            {/* Spreadsheets Course */}
-            <div className="card p-6">
-              <div className="flex items-center mb-4">
-                <Book className="text-gold mr-3" size={24} />
-                <h3 className="text-xl font-bold">Spreadsheets</h3>
-              </div>
-              <p className="text-gray-700 mb-3">Advanced data analysis and modeling using spreadsheet applications.</p>
-              <div className="bg-gray-100 p-3 rounded">
-                <p className="font-semibold">Grade: A</p>
-                <p className="text-sm text-gray-600">Top 5% of class</p>
-              </div>
-            </div>
-            
-            {/* Economics Course */}
-            <div className="card p-6">
-              <div className="flex items-center mb-4">
-                <Book className="text-gold mr-3" size={24} />
-                <h3 className="text-xl font-bold">Economics</h3>
-              </div>
-              <p className="text-gray-700 mb-3">Micro and macroeconomic principles with focus on data-driven analysis.</p>
-              <div className="bg-gray-100 p-3 rounded">
-                <p className="font-semibold">Grade: A-</p>
-                <p className="text-sm text-gray-600">Research project recognized by faculty</p>
-              </div>
-            </div>
-            
-            {/* Statistics Course */}
-            <div className="card p-6">
-              <div className="flex items-center mb-4">
-                <Book className="text-gold mr-3" size={24} />
-                <h3 className="text-xl font-bold">Statistics</h3>
-              </div>
-              <p className="text-gray-700 mb-3">Statistical methods, probability theory, and practical data analysis.</p>
-              <div className="bg-gray-100 p-3 rounded">
-                <p className="font-semibold">Grade: A</p>
-                <p className="text-sm text-gray-600">Awarded for outstanding project work</p>
-              </div>
-            </div>
-          </div>
+     <section className="section bg-gray-50">
+  <div className="container mx-auto px-4">
+    <SectionHeader 
+      title="Academic Highlights"
+      subtitle="Top performing subjects"
+      centered={true}
+    />
+    
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
+      
+      {/* Macroeconomics */}
+      <div className="bg-white p-3 rounded shadow-sm">
+        <h4 className="font-semibold mb-1">Macroeconomics</h4>
+        <p className="text-gray-600">Grade: A+</p>
+      </div>
+
+      {/* Time Series Econometrics */}
+      <div className="bg-white p-3 rounded shadow-sm">
+        <h4 className="font-semibold mb-1">Time Series Econometrics</h4>
+        <p className="text-gray-600">Grade: A+</p>
+      </div>
+
+      {/* Connected Technologies */}
+      <div className="bg-white p-3 rounded shadow-sm">
+        <h4 className="font-semibold mb-1">Connected Technologies</h4>
+        <p className="text-gray-600">Grade: A+</p>
+      </div>
+
+      {/* AI/ML Approaches */}
+      <div className="bg-white p-3 rounded shadow-sm">
+        <h4 className="font-semibold mb-1">AI/ML Approaches</h4>
+        <p className="text-gray-600">Grade: A</p>
+      </div>
+
+      {/* Programming with Python */}
+      <div className="bg-white p-3 rounded shadow-sm">
+        <h4 className="font-semibold mb-1">Programming with Python</h4>
+        <p className="text-gray-600">Grade: A</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
           
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="p-6">
