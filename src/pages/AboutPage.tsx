@@ -87,7 +87,7 @@ const AboutPage = () => {
               </div>
             </div>
             
-            <div className="lg:col-span-1">
+{/*             <div className="lg:col-span-1">
               <div className="rounded-lg overflow-hidden mb-8 group relative">
                 <img 
                   src="/assets/pic.png" 
@@ -95,7 +95,7 @@ const AboutPage = () => {
                   className="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-2"
                 />
                 <div className="absolute inset-0 bg-gold/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
+              </div> */}
               
               <div className="bg-navy text-white p-6 rounded-lg mb-8">
                 <h3 className="text-xl font-bold mb-4 text-gold">Contact Information</h3>
