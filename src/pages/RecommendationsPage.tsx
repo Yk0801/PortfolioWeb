@@ -1,4 +1,3 @@
-
 import PageLayout from '@/components/layout/PageLayout';
 import SectionHeader from '@/components/ui/SectionHeader';
 import RecommendationCard from '@/components/ui/RecommendationCard';
@@ -8,27 +7,24 @@ const RecommendationsPage = () => {
   // Sample recommendations data
   const recommendations = [
     {
-      content: "I had the pleasure of supervising during their internship at our company. Their analytical skills and attention to detail were exceptional. They quickly grasped complex concepts and delivered high-quality work consistently. Their ability to translate data insights into actionable recommendations was particularly impressive.",
-      author: "Jane Smith",
-      role: "Data Analytics Manager",
-      company: "Tech Solutions Inc.",
-      imageUrl: "/placeholder.svg",
-      pdfUrl: "#"
-    },
-    {
-      content: "As their professor for Advanced Statistical Methods, I was consistently impressed by their intellectual curiosity and rigorous approach to problem-solving. They demonstrated an exceptional ability to apply theoretical concepts to practical scenarios and showed outstanding initiative in their research project.",
-      author: "Dr. Robert Johnson",
-      role: "Professor of Statistics",
-      company: "University Name",
-      imageUrl: "/placeholder.svg",
-      pdfUrl: "#"
-    },
+      content: "I had the pleasure of mentoring Yuktha during her internship, and I was consistently impressed by her dedication, curiosity, and ability to quickly grasp complex concepts. Coming from a BBA background with a strong technical foundation, she stood out for her unique blend of business acumen and analytical skills.",
+      author: "Babasaheb R Mane",
+      role: "Data Scientist",
+      company: "Prolifics.",
+      pdfUrl: "https://www.linkedin.com/in/yuktha-sri-bollina/details/recommendations/"
+    }
+    // {
+    //   content: "As their professor for Advanced Statistical Methods, I was consistently impressed by their intellectual curiosity and rigorous approach to problem-solving. They demonstrated an exceptional ability to apply theoretical concepts to practical scenarios and showed outstanding initiative in their research project.",
+    //   author: "Dr. Robert Johnson",
+    //   role: "Professor of Statistics",
+    //   company: "University Name",
+    //   pdfUrl: "#"
+    // },
     // {
     //   content: "I've had the opportunity to collaborate with them on several campus initiatives where they served as a Campus Ambassador. Their communication skills, leadership abilities, and dedication to excellence were evident in every project. They have a natural talent for engaging diverse audiences and building relationships.",
     //   author: "Michael Chen",
     //   role: "Student Activities Director",
     //   company: "University Name",
-    //   imageUrl: "/placeholder.svg",
     //   pdfUrl: "#"
     // }
   ];

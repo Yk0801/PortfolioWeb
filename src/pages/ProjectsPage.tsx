@@ -4,77 +4,53 @@ import ProjectCard from '@/components/ui/ProjectCard';
 
 const ProjectsPage = () => {
   // Sample project data
-  // const capstoneProject = {
-  //   title: "Predictive Analytics for Retail Demand",
-  //   description: "Capstone project analyzing retail data to predict demand patterns and optimize inventory management using machine learning algorithms.",
-  //   techStack: ["Python", "Scikit-Learn", "Pandas", "Tableau"],
-  //   imageUrl: "/placeholder.svg",
-  //   grade: "A"
-  // };
-  
   const otherProjects = [
-
     {
       title: "Market Research for Tavasya",
-      description: "Interactive dashboard visualizing key economic indicators and their correlations over time.",
-      techStack: ["R", "Shiny", "ggplot2", "Economic Data"],
-      imageUrl: "/placeholder.svg",
+      description: "Comprehensive market research project analyzing feasibility, demand, competition, and consumer behavior for a hybrid dine-in and cloud kitchen restaurant in Hyderabad.",
+      techStack: ["Market Research", "Consumer Surveys", "Competitive Analysis", "Field Research", "Qualitative & Quantitative Methods"],
+      imageUrl: "/assets/Tavasya.jpg",
       githubUrl: "https://github.com/Yk0801/Tavasya_Market_Research/tree/main",
       liveUrl: "https://github.com/Yk0801/Tavasya_Market_Research/tree/main"
     },
     {
-      title: "Economic Indicator Dashboard",
-      description: "Interactive dashboard visualizing key economic indicators and their correlations over time.",
-      techStack: ["R", "Shiny", "ggplot2", "Economic Data"],
-      imageUrl: "/placeholder.svg",
-      githubUrl: "#",
-      liveUrl: "#"
+      title: "Netflix User Behavior Analysis",
+      description: "Exploratory and predictive analysis of Netflix user data to understand viewing patterns and binge behavior.",
+      techStack: ["Python", "Pandas", "Matplotlib", "Seaborn"],
+      imageUrl: "/assets/netflix_pic.png",
+      githubUrl: "https://github.com/Yk0801/Predictive-Data-Analysis-Visualization",
+      liveUrl: "https://github.com/Yk0801/Predictive-Data-Analysis-Visualization/blob/main/Predictive%20Data%20Analysis%20%26%20Visualization.ipynb"
     },
     {
-      title: "Customer Segmentation Analysis",
-      description: "Applied clustering algorithms to segment customers based on purchasing behavior and demographics.",
-      techStack: ["Python", "K-Means", "Data Visualization", "Statistical Analysis"],
-      imageUrl: "/placeholder.svg",
+      title: "E-Commerce Customer Insights & Prediction",
+      description: "Conducted comprehensive analysis on 11,655 e-commerce transactions using regression, decision trees, random forests, and K-Means clustering to predict customer spending and segment users based on behavior and demographics.",
+      techStack: ["Python", "Pandas", "Linear Regression", "Decision Tree", "Random Forest", "K-Means Clustering", "Seaborn", "Matplotlib"],
+      imageUrl: "/assets/excel.png",
+      githubUrl: "https://github.com/Yk0801/marketing_analytics_project/tree/main"
+    },
+    {
+      title: "Cereal Nutritional Data Analysis",
+      description: "Exploratory data analysis and interactive Power BI dashboard built using a dataset of 77 cereals across 7 manufacturers. Visualized key nutritional metrics such as calories, sugar, protein, and fiber to uncover health patterns and brand-wise comparisons. Enabled dynamic filtering for informed cereal choices based on dietary preferences.",
+      techStack: ["Power BI", "Python", "Pandas", "Data Visualization", "EDA"],
+      imageUrl: "/assets/POWER_BI.png",
+      githubUrl: "https://github.com/Yk0801/Cereal-Analysis",
+      liveUrl: "#" // Optional: link to Power BI report if published
+    },
+    {
+      title: "Pet Paradise",
+      description: "A premium pet service start-up providing mobile grooming, pet food, accessories, and companionship matchmaking for pets. Focused on creating a paradise for your furry friends with convenience and care.",
+      techStack: ["Local SEO", "Social Media Marketing", "Content Marketing", "Google Ads", "Influencer Marketing"],
+      imageUrl: "/assets/pet_paradise.png",
       githubUrl: "#"
     },
     {
-      title: "Stock Market Trend Analysis",
-      description: "Time-series analysis of stock market trends with predictive modeling for short-term price movements.",
-      techStack: ["Python", "ARIMA", "Pandas", "Financial Analysis"],
-      imageUrl: "/placeholder.svg",
-      githubUrl: "#",
-      liveUrl: "#"
-    },
-    {
-      title: "Social Media Sentiment Analyzer",
-      description: "Tool that analyzes sentiment from social media posts about specific products or brands.",
-      techStack: ["Python", "NLTK", "NLP", "Sentiment Analysis"],
-      imageUrl: "/placeholder.svg",
-      githubUrl: "#"
-    },
-    {
-      title: "E-commerce Purchase Prediction",
-      description: "Predictive model to identify customers likely to make purchases based on browsing behavior.",
-      techStack: ["Python", "Logistic Regression", "Data Mining", "Web Analytics"],
-      imageUrl: "/placeholder.svg",
+      title: "IoT-enabled eDNA Sampling in Wildlife and Forestry",
+      description: "An innovative ecological monitoring solution using IoT-enabled environmental DNA (eDNA) samplers to track biodiversity and species health in real time. This project leverages advanced sensor integration and DNA sequencing technology to deliver early insights into environmental threats and species decline, enabling proactive conservation decisions.",
+      techStack: ["IoT", "Environmental DNA (eDNA)", "Sensor Technology", "Biodiversity Monitoring", "Conservation Science"],
+      imageUrl: "/assets/iot.png",
       githubUrl: "#"
     }
   ];
-  
-  // const researchProjects = [
-  //   {
-  //     title: "Impact of Economic Policies on Market Volatility",
-  //     description: "Research examining how economic policy announcements affect market volatility in different sectors.",
-  //     techStack: ["R", "Statistical Analysis", "Economic Theory", "Financial Markets"],
-  //     imageUrl: "/placeholder.svg"
-  //   },
-  //   {
-  //     title: "Consumer Behavior During Economic Downturns",
-  //     description: "Analysis of changing consumer spending patterns during periods of economic contraction.",
-  //     techStack: ["SPSS", "Survey Analysis", "Behavioral Economics", "Regression Analysis"],
-  //     imageUrl: "/placeholder.svg"
-  //   }
-  // ];
 
   return (
     <PageLayout>
@@ -84,77 +60,17 @@ const ProjectsPage = () => {
             title="Projects & Research"
             subtitle="Explore my academic and professional projects showcasing my skills and interests."
           />
-          
-          {/* Capstone Project
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold mb-6 text-navy">Capstone Project</h3>
-            
-            <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100">
-              <div className="grid grid-cols-1 lg:grid-cols-3">
-                <div className="lg:col-span-1">
-                  <img 
-                    src={capstoneProject.imageUrl} 
-                    alt={capstoneProject.title} 
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                
-                <div className="lg:col-span-2 p-6">
-                  <div className="flex flex-col md:flex-row md:justify-between md:items-start">
-                    <h3 className="text-2xl font-bold text-navy mb-2">{capstoneProject.title}</h3>
-                    <div className="inline-flex items-center bg-gold bg-opacity-20 text-navy px-3 py-1 rounded-full text-sm font-semibold mb-3 md:mb-0">
-                      Grade: {capstoneProject.grade}
-                    </div>
-                  </div>
-                  
-                  <p className="text-gray-700 mb-6">{capstoneProject.description}</p>
-                  
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-navy mb-2">Project Highlights:</h4>
-                    <ul className="list-disc pl-5 space-y-1 text-gray-700">
-                      <li>Developed predictive models with 85% accuracy for demand forecasting</li>
-                      <li>Implemented data cleaning and transformation pipelines for large retail datasets</li>
-                      <li>Created interactive visualizations to communicate findings to stakeholders</li>
-                      <li>Recommended inventory optimizations resulting in potential 12% cost reduction</li>
-                    </ul>
-                  </div>
-                  
-                  <div className="flex flex-wrap gap-2">
-                    {capstoneProject.techStack.map((tech, index) => (
-                      <span 
-                        key={index}
-                        className="bg-gray-100 text-navy px-3 py-1 rounded-full text-sm"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
-          
+
           {/* Other Projects */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold mb-6 text-navy">Projects</h3>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {otherProjects.map((project, index) => (
                 <ProjectCard key={index} {...project} />
               ))}
             </div>
           </div>
-          
-          {/* Research */}
-          {/* <div>
-            <h3 className="text-2xl font-bold mb-6 text-navy">Research Work</h3>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {researchProjects.map((project, index) => (
-                <ProjectCard key={index} {...project} />
-              ))}
-            </div>
-          </div> */}
         </div>
       </section>
     </PageLayout>

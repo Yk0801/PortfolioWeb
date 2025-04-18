@@ -36,7 +36,7 @@ const SummaryPage = () => {
             <div className="lg:w-1/2 flex justify-center animate-slide-in">
               <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-gold">
                 <img 
-                  src="/assets/pic1.jpg" 
+                  src="/assets/pic3.jpg" 
                   alt="Yuktha Sri" 
                   className="w-full h-full object-cover"
                 />
