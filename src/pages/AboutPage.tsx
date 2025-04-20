@@ -33,7 +33,7 @@ const AboutPage = () => {
                 <div className="border border-gray-200 rounded-lg p-4">
                   <div className="text-blue-700 font-bold text-lg mb-1">2020 – 2022</div>
                   <div className="text-lg font-semibold">Intermediate (MPC Stream)</div>
-                  <div className="text-sm text-gray-600 mb-2">Sasi Junior College, Hyderabad</div>
+                  <div className="text-sm text-gray-600 mb-2">Sasi Junior College, Rajahmundry</div>
                   <p className="text-gray-700 mt-2">
                     Studied Mathematics, Physics, and Chemistry, with a focus on logical reasoning and quantitative aptitude.
                     <ul className="list-disc list-inside mt-2">
