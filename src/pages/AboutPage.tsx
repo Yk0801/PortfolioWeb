@@ -21,11 +21,12 @@ const AboutPage = () => {
                   <div className="text-lg font-semibold">BBA in Computational Business Analytics</div>
                   <div className="text-sm text-gray-600 mb-2">Mahindra University, Hyderabad, India</div>
                   <p className="text-gray-700 mt-2">
-                    My academic journey focuses on blending business insight with analytical tools like Python, R, SQL, and Power BI.
+                    My academic experience at Mahindra University helped me build a solid foundation in business and data analytics.
                     <ul className="list-disc list-inside mt-2">
-                      <li>Current CGPA: 8.25</li>
-                      <li>Key Projects: Marketing Dashboards, SQL-based DBMS systems, Predictive Models</li>
-                      <li>Capstone on cloud kitchen market competition</li>
+                      <li>Worked on group projects involving real-world business problems and data-driven solutions.>
+                      <li>Participated in seminars and guest lectures by industry professionals.</li>
+                      <li>Contributed to classroom discussions and team assignments focused on business strategy and analytics.</li>
+                      <li>CGPA: 8.25</li>
                     </ul>
                   </p>
                 </div>
@@ -34,7 +35,7 @@ const AboutPage = () => {
                   <div className="text-lg font-semibold">Intermediate (MPC Stream)</div>
                   <div className="text-sm text-gray-600 mb-2">Sasi Junior College, Hyderabad</div>
                   <p className="text-gray-700 mt-2">
-                    Built a strong foundation in problem-solving through core subjects like Mathematics and Physics.
+                    Studied Mathematics, Physics, and Chemistry, with a focus on logical reasoning and quantitative aptitude.
                     <ul className="list-disc list-inside mt-2">
                       <li>Scored 955 / 1000 in MPC</li>
                     </ul>
