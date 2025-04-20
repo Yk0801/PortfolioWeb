@@ -23,7 +23,7 @@ const AboutPage = () => {
                   <p className="text-gray-700 mt-2">
                     My academic experience at Mahindra University helped me build a solid foundation in business and data analytics.
                     <ul className="list-disc list-inside mt-2">
-                      <li>Worked on group projects involving real-world business problems and data-driven solutions.>
+                      <li>Worked on group projects involving real-world business problems and data-driven solutions.</li>
                       <li>Participated in seminars and guest lectures by industry professionals.</li>
                       <li>Contributed to classroom discussions and team assignments focused on business strategy and analytics.</li>
                       <li>CGPA: 8.25</li>
