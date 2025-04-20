@@ -67,11 +67,7 @@ const SummaryPage = () => {
               </p>
               
               <p className="text-lg text-gray-700 mb-4">
-                I’ve always been someone who gets excited by new things — whether it’s a new tool, an idea, or even a recipe. I may not be the most creative person in a typical sense, but I’ve learned to find smart, simple ways to overcome that. I try, I learn, and I keep improving — that’s my approach to everything. 
-              </p>
-              
-              <p className="text-lg text-gray-700 mb-4">
-                Right now, I’m studying Computational Business Analytics, where I combine my love for numbers, logic, and business. I enjoy working with tools like Power BI and Python to turn messy data into something meaningful. Whether it's for a class project, internship, or just exploring an idea, I love finding patterns and helping people make better decisions using data.
+                Right now, I’m studying Computational Business Analytics, where I combine my love for numbers, logic, and business. I enjoy working with tools like Power BI and Python to turn messy data into something meaningful.
               </p>
 
               <p className="text-lg text-gray-700 mb-4">
