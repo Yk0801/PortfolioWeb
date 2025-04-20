@@ -38,6 +38,7 @@ const AboutPage = () => {
                     Studied Mathematics, Physics, and Chemistry, with a focus on logical reasoning and quantitative aptitude.
                     <ul className="list-disc list-inside mt-2">
                       <li>Scored 955 / 1000 in MPC</li>
+                      <li>Participated in subject-focused assessments and mock tests to build exam readiness.</li>
                     </ul>
                   </p>
                 </div>
