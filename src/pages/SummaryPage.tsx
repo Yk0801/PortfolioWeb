@@ -17,8 +17,7 @@ const SummaryPage = () => {
               </h1>
               
               <p className="text-xl text-gray-600 mb-8 max-w-xl">
-                A dedicated professional with expertise in Business analytics, and economics. 
-                Passionate about leveraging data to drive insights and innovation.
+                 Business Analytics enthusiast with a passion for data-driven problem solving.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
