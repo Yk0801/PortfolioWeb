@@ -6,91 +6,88 @@ const SummaryPage = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry, index) => {
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && entry.target instanceof HTMLElement) {
             entry.target.style.transitionDelay = `${index * 100}ms`;
-            entry.target.classList.add('fade-in');
+            entry.target.classList.add('grand-fade-in');
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.2 }
     );
 
-    const elements = document.querySelectorAll('.animate-on-scroll');
-    elements.forEach((element) => observer.observe(element));
+    const elements = document.querySelectorAll('.grand-animate');
+    elements.forEach((el) => observer.observe(el));
 
     return () => {
-      elements.forEach((element) => observer.unobserve(element));
+      elements.forEach((el) => observer.unobserve(el));
     };
   }, []);
 
   return (
     <PageLayout>
-      <section className="min-h-screen bg-gradient-to-br from-white to-yellow-50 flex flex-col lg:flex-row items-center justify-center px-5 py-20">
-        {/* Right Section - Image */}
-        <div className="w-full lg:w-1/2 flex justify-center items-center mb-10 lg:mb-0 order-1 lg:order-2 animate-on-scroll opacity-0 transition-opacity duration-800 ease-out">
-          <div className="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] rounded-2xl overflow-hidden shadow-lg border-2 border-yellow-400 transform transition-all duration-700 ease-in-out hover:scale-102">
-            <img
-              src="/assets/pic3.jpg"
-              alt="Yuktha Sri Bollina"
-              className="w-full h-full object-cover"
-            />
+      <section className="bg-white px-6 pt-6 pb-20">
+        <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-7xl mx-auto gap-10 py-10">
+          <div className="lg:w-1/2 grand-animate">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-gray-900 mb-6">
+              <span className="block text-navy animate-slide-up">Hey, I'm</span>
+              <span className="inline-block bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent">
+                Yuktha Sri Bollina
+              </span>
+            </h1>
+            <div className="text-lg text-gray-700 space-y-4 font-medium animate-slide-up">
+              <p>
+                I’m Yuktha Sri Bollina, from the town of Rajahmundry — a place that taught me to stay calm, be curious, and enjoy the small things in life.
+              </p>
+              <p>
+                I’m someone who loves exploring — tools, ideas, and challenges. While I don’t always think “outside the box,” I build practical solutions with smart, iterative effort. I try, learn, and grow — that's how I work.
+              </p>
+              <p>
+                I study Computational Business Analytics, where I turn data into decisions using Power BI, Python, and logical reasoning. I enjoy uncovering insights, solving real-world problems, and helping businesses become data-savvy.
+              </p>
+              <p>
+                Outside work, you’ll find me tuning into business podcasts, playing chess with friends, or experimenting with new dishes — they all sharpen different sides of me.
+              </p>
+              <p className="italic text-navy font-semibold">
+                This portfolio is a glimpse into how I think, what I build, and why I believe in data-powered decisions.
+              </p>
+            </div>
+          </div>
+          <div className="lg:w-1/2 flex justify-center grand-animate">
+            <div className="w-80 h-80 sm:w-96 sm:h-96 relative group transition-transform duration-700 ease-in-out hover:scale-105">
+              <div className="absolute inset-0 rounded-full border-[6px] border-white z-10"></div>
+              <img
+                src="/assets/pic3.jpg"
+                alt="Yuktha Sri Bollina"
+                className="rounded-full w-full h-full object-cover z-20 relative shadow-2xl border-4 border-yellow-400"
+              />
+            </div>
           </div>
         </div>
-
-        {/* Left Section - Info */}
-        <div className="w-full lg:w-1/2 lg:pr-10 space-y-6 text-gray-800 order-2 lg:order-1">
-          <h1 className="text-4xl lg:text-5xl font-bold leading-tight animate-heading break-words relative z-10">
-            Statement of <span className="text-yellow-500">Portfolio</span>
-          </h1>
-          <p className="text-lg leading-relaxed animate-on-scroll opacity-0">
-            <span className="font-semibold text-navy">Hey! I’m Yuktha Sri Bollina</span>, from the town of Rajahmundry — a place
-            that taught me to stay calm, be curious, and enjoy the small things in life.
-          </p>
-          <p className="text-lg leading-relaxed animate-on-scroll opacity-0">
-            I’m someone who loves exploring — tools, ideas, and challenges. While I don’t always think “outside the box,” I build practical
-            solutions with smart, iterative effort. <span className="text-yellow-500 font-medium">I try, learn, and grow</span> — that's how I work.
-          </p>
-          <p className="text-lg leading-relaxed animate-on-scroll opacity-0">
-            I study <span className="font-semibold text-navy">Computational Business Analytics</span>, where I turn data into decisions
-            using Power BI, Python, and logical reasoning. I enjoy uncovering insights, solving real-world problems, and helping
-            businesses become data-savvy.
-          </p>
-          <p className="text-lg leading-relaxed animate-on-scroll opacity-0">
-            Outside work, you’ll find me tuning into business podcasts, playing chess with friends, or experimenting with new dishes — 
-            they all sharpen different sides of me.
-          </p>
-          <p className="text-lg italic leading-relaxed animate-on-scroll opacity-0">
-            This portfolio is a glimpse into how I think, what I build, and why I believe in data-powered decisions.
-          </p>
-        </div>
-      </section>
-
-      <style jsx>{`
-        .fade-in {
-          opacity: 1 !important;
-          transform: translateY(0);
-        }
-
-        .animate-on-scroll {
-          opacity: 0;
-          transform: translateY(20px);
-          transition: opacity 800ms ease-out, transform 800ms ease-out;
-        }
-
-        .animate-heading {
-          opacity: 0;
-          transform: translateY(30px);
-          animation: slideFadeIn 1s ease-out forwards;
-          animation-delay: 200ms;
-        }
-
-        @keyframes slideFadeIn {
-          to {
-            opacity: 1;
-            transform: translateY(0);
+        <style jsx>{`
+          .grand-fade-in {
+            opacity: 1 !important;
+            transform: translateY(0) scale(1);
           }
-        }
-      `}</style>
+          .grand-animate {
+            opacity: 0;
+            transform: translateY(40px) scale(0.95);
+            transition: all 1s ease;
+          }
+          .animate-slide-up {
+            animation: slideUp 1s ease forwards;
+          }
+          @keyframes slideUp {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        `}</style>
+      </section>
     </PageLayout>
   );
 };
