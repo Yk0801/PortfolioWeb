@@ -35,7 +35,7 @@ const CertificationsPage = () => {
       date: "Feb 2, 2025",
       description: "Recognizing a great opportunity to help your organization, but how do you communicate it? Learn how to create and present a compelling business case that aligns with your company’s strategic priorities.",
       badgeUrl: "/assets/business_development_case.png",
-      verificationUrl: "https://drive.google.com/file/d/1ouwNfHMJe2XXfY4fChASuQHIVu3xsWqo/view?usp=sharing"
+      verificationUrl: "https://drive.google.com/file/d/1pinK-ytvs3cBzfwGf6_IM2YTcuPfrSo2/view?usp=sharing"
     }
   ];
 
