@@ -1,92 +1,96 @@
-
+import { useEffect } from 'react';
 import PageLayout from '@/components/layout/PageLayout';
-import SocialIcons from '@/components/ui/SocialIcons';
-import { ArrowDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const SummaryPage = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = `${index * 100}ms`;
+            entry.target.classList.add('fade-in');
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    const elements = document.querySelectorAll('.animate-on-scroll');
+    elements.forEach((element) => observer.observe(element));
+
+    return () => {
+      elements.forEach((element) => observer.unobserve(element));
+    };
+  }, []);
+
   return (
     <PageLayout>
-      <section className="min-h-screen relative flex items-center bg-white">
-        <div className="container mx-auto px-4 py-20">
-          <div className="flex flex-col lg:flex-row items-center">
-            <div className="lg:w-1/2 mb-10 lg:mb-0 animate-fade-in">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                <span className="text-navy block">Hello, I'm</span>
-                <span className="text-gold">Bollina Yuktha Sri</span>
-              </h1>
-              
-              <p className="text-xl text-gray-600 mb-8 max-w-xl">
-                 Business Analytics enthusiast with a passion for data-driven problem solving.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Link to="/about" className="btn-primary">
-                  Learn More
-                </Link>
-                <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-accent">
-                  Download Resume
-                </a>
-              </div>
-              
-              <SocialIcons />
-            </div>
-            
-            <div className="lg:w-1/2 flex justify-center animate-slide-in">
-              <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-gold">
-                <img 
-                  src="/assets/pic3.jpg" 
-                  alt="Yuktha Sri" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
+      <section className="min-h-screen bg-gradient-to-br from-white to-yellow-50 flex flex-col lg:flex-row items-center justify-center px-5 py-20">
+        {/* Right Section - Image */}
+        <div className="w-full lg:w-1/2 flex justify-center items-center mb-10 lg:mb-0 order-1 lg:order-2 animate-on-scroll opacity-0 transition-opacity duration-800 ease-out">
+          <div className="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] rounded-2xl overflow-hidden shadow-lg border-2 border-yellow-400 transform transition-all duration-700 ease-in-out hover:scale-102">
+            <img
+              src="/assets/pic3.jpg"
+              alt="Yuktha Sri Bollina"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
-        
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center animate-bounce">
-          <a 
-            href="#statement" 
-            className="text-navy hover:text-gold transition-colors flex flex-col items-center"
-          >
-            <span className="mb-2">Scroll Down</span>
-            <ArrowDown size={20} />
-          </a>
+
+        {/* Left Section - Info */}
+        <div className="w-full lg:w-1/2 lg:pr-10 space-y-6 text-gray-800 order-2 lg:order-1">
+          <h1 className="text-4xl lg:text-5xl font-bold leading-tight animate-heading break-words relative z-10">
+            Statement of <span className="text-yellow-500">Portfolio</span>
+          </h1>
+          <p className="text-lg leading-relaxed animate-on-scroll opacity-0">
+            <span className="font-semibold text-navy">Hey! I’m Yuktha Sri Bollina</span>, from the town of Rajahmundry — a place
+            that taught me to stay calm, be curious, and enjoy the small things in life.
+          </p>
+          <p className="text-lg leading-relaxed animate-on-scroll opacity-0">
+            I’m someone who loves exploring — tools, ideas, and challenges. While I don’t always think “outside the box,” I build practical
+            solutions with smart, iterative effort. <span className="text-yellow-500 font-medium">I try, learn, and grow</span> — that's how I work.
+          </p>
+          <p className="text-lg leading-relaxed animate-on-scroll opacity-0">
+            I study <span className="font-semibold text-navy">Computational Business Analytics</span>, where I turn data into decisions
+            using Power BI, Python, and logical reasoning. I enjoy uncovering insights, solving real-world problems, and helping
+            businesses become data-savvy.
+          </p>
+          <p className="text-lg leading-relaxed animate-on-scroll opacity-0">
+            Outside work, you’ll find me tuning into business podcasts, playing chess with friends, or experimenting with new dishes — 
+            they all sharpen different sides of me.
+          </p>
+          <p className="text-lg italic leading-relaxed animate-on-scroll opacity-0">
+            This portfolio is a glimpse into how I think, what I build, and why I believe in data-powered decisions.
+          </p>
         </div>
       </section>
-      
-      <section id="statement" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-navy">Purpose of Portfolio</h2>
-            
-            <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100">
-              <p className="text-lg text-gray-700 mb-4">
-                Hey! I’m Yuktha Sri Bollina, from the beautiful town of Rajahmundry — a place that taught me to stay calm, be curious, and enjoy the small things in life.
-              </p>
-              
-              <p className="text-lg text-gray-700 mb-4">
-                Right now, I’m studying Computational Business Analytics, where I combine my love for numbers, logic, and business. I enjoy working with tools like Power BI and Python to turn messy data into something meaningful.
-              </p>
 
-              <p className="text-lg text-gray-700 mb-4">
-                Outside academics, I like listening to business podcasts — it’s interesting to see how businesses grow and adapt. I also enjoy playing chess with friends (it sharpens my thinking) and cooking in my free time (just for fun and a break!).
-              </p>
+      <style jsx>{`
+        .fade-in {
+          opacity: 1 !important;
+          transform: translateY(0);
+        }
 
-              <p className="text-lg text-gray-700">
-                This portfolio is a small space where I share my journey — the things I’ve tried, learned, and built. It’s not perfect, but it’s real — just like me.
-              </p>
+        .animate-on-scroll {
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 800ms ease-out, transform 800ms ease-out;
+        }
 
-            </div>
-            
-            <div className="mt-10">
-              <Link to="/about" className="btn-primary">
-                Learn More About Me
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+        .animate-heading {
+          opacity: 0;
+          transform: translateY(30px);
+          animation: slideFadeIn 1s ease-out forwards;
+          animation-delay: 200ms;
+        }
+
+        @keyframes slideFadeIn {
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </PageLayout>
   );
 };
