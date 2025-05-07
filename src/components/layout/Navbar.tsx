@@ -12,7 +12,7 @@ const Navbar = () => {
     { name: 'Experience', path: '/experience' },
     { name: 'Projects', path: '/projects' },
     { name: 'Certifications', path: '/certifications' },
-    { name: 'Extra Curricular Activities', path: '/activities' },
+    { name: 'Extra Curricular Activities', path: '/activities'},
     { name: 'Recommendations', path: '/recommendations' },
   ];
 
@@ -26,12 +26,12 @@ const Navbar = () => {
           <Link to="/" className="text-navy font-bold text-2xl">Portfolio</Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-1">
+          <div className="hidden md:flex space-x-2">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`nav-link ${location.pathname === link.path ? 'active' : ''}`}
+                className={`nav-link ${location.pathname === link.path ? 'active text-gold underline' : ''}`}
               >
                 {link.name}
               </Link>
@@ -56,7 +56,7 @@ const Navbar = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`px-4 py-3 hover:bg-gray-50 ${location.pathname === link.path ? 'text-gold' : 'text-navy'}`}
+                  className={`px-4 py-3 hover:bg-gray-50 ${location.pathname === link.path ? 'text-gold font-semibold' : 'text-navy'}`}
                   onClick={closeMenu}
                 >
                   {link.name}
