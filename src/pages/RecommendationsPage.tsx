@@ -12,21 +12,21 @@ const RecommendationsPage = () => {
       role: "Data Scientist",
       company: "Prolifics.",
       pdfUrl: "https://www.linkedin.com/in/yuktha-sri-bollina/details/recommendations/"
-    }
+    },
     // {
     //   content: "As their professor for Advanced Statistical Methods, I was consistently impressed by their intellectual curiosity and rigorous approach to problem-solving. They demonstrated an exceptional ability to apply theoretical concepts to practical scenarios and showed outstanding initiative in their research project.",
     //   author: "Dr. Robert Johnson",
     //   role: "Professor of Statistics",
     //   company: "University Name",
-    //   pdfUrl: "#"
+    //   pdfUrl: "https://www.linkedin.com/in/yuktha-sri-bollina/details/recommendations/"
     // },
-    // {
-    //   content: "I've had the opportunity to collaborate with them on several campus initiatives where they served as a Campus Ambassador. Their communication skills, leadership abilities, and dedication to excellence were evident in every project. They have a natural talent for engaging diverse audiences and building relationships.",
-    //   author: "Michael Chen",
-    //   role: "Student Activities Director",
-    //   company: "University Name",
-    //   pdfUrl: "#"
-    // }
+    {
+      content: "I am delighted to write this recommendation for Yuktha Sri Bollina, a standout student in my Introduction to Statistics, Linear Algebra, and Computational Statistics courses. Yuktha consistently impressed me with her analytical mindset and dedication. In Introduction to Statistics, she demonstrated a knack for interpreting data and applying her statistical knowledge to solve complex statistical problems. ",
+      author: "Pranjal Chandrakar",
+      role: "Assistant Professor",
+      company: "Mahindra University - School Of Management",
+      pdfUrl: "https://www.linkedin.com/in/yuktha-sri-bollina/details/recommendations/"
+    }
   ];
 
   return (
