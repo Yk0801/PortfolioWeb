@@ -2,7 +2,6 @@ import PageLayout from '@/components/layout/PageLayout';
 import SectionHeader from '@/components/ui/SectionHeader';
 import RecommendationCard from '@/components/ui/RecommendationCard';
 import { FileText } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 const RecommendationsPage = () => {
   const recommendations = [
@@ -28,54 +27,23 @@ const RecommendationsPage = () => {
     <PageLayout>
       <section className="section bg-white">
         <div className="container mx-auto px-4">
-          {/* Animated Section Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <SectionHeader
-              title="Recommendations"
-              subtitle="Professional endorsements from mentors, professors, and supervisors."
-            />
-          </motion.div>
+          {/* Section Header */}
+          <SectionHeader
+            title="Recommendations"
+            subtitle="Professional endorsements from mentors, professors, and supervisors."
+          />
 
-          {/* Animated Recommendation Cards */}
-          <motion.div
-            className="grid grid-cols-1 gap-8 max-w-4xl mx-auto mb-16"
-            initial="hidden"
-            animate="visible"
-            variants={{
-              hidden: {},
-              visible: {
-                transition: {
-                  staggerChildren: 0.2,
-                },
-              },
-            }}
-          >
+          {/* Recommendation Cards */}
+          <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto mb-16">
             {recommendations.map((recommendation, index) => (
-              <motion.div
-                key={index}
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0 },
-                }}
-                transition={{ duration: 0.5 }}
-              >
+              <div key={index}>
                 <RecommendationCard {...recommendation} />
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
 
-          {/* Animated CTA Box */}
-          <motion.div
-            className="bg-gray-50 rounded-lg p-8 max-w-4xl mx-auto"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
+          {/* CTA Box */}
+          <div className="bg-gray-50 rounded-lg p-8 max-w-4xl mx-auto">
             <div className="flex items-start">
               <div className="mr-4 mt-1 text-gold">
                 <FileText size={24} />
@@ -109,7 +77,7 @@ const RecommendationsPage = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </PageLayout>
