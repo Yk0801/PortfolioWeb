@@ -1,6 +1,6 @@
 import PageLayout from '@/components/layout/PageLayout';
 import SectionHeader from '@/components/ui/SectionHeader';
-import { FileText, Linkedin } from 'lucide-react';
+import { FileText, Linkedin ,Video} from 'lucide-react';
 
 const AboutPage = () => {
   return (
@@ -73,12 +73,12 @@ const AboutPage = () => {
                 </a>
 
                 <a 
-                  href="https://www.linkedin.com/in/yuktha-sri-bollina/" 
+                  href="https://www.linkedin.com/in/yuktha-sri-bollina/"  // Update this to your actual video link if needed
                   className="btn-accent inline-flex items-center px-4 py-2 rounded-md shadow hover:shadow-lg transition"
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  <Linkedin className="mr-2" size={18} />
+                  <Video className="mr-2" size={18} />  {/* Replaced Linkedin with Video */}
                   Video Introduction
                 </a>
               </div>
