@@ -36,16 +36,13 @@ const SummaryPage = () => {
             </h1>
             <div className="text-lg text-gray-700 space-y-4 font-medium animate-slide-up">
               <p>
-                I’m Yuktha Sri Bollina, from the town of Rajahmundry — a place that taught me to stay calm, be curious, and enjoy the small things in life.
+                This portfolio represents my growth and development as a student of Computational Business Analytics, reflecting my technical expertise in Python, SQL, Power BI, and analytical reasoning through hands-on projects and certifications.
               </p>
               <p>
-                I’m someone who loves exploring — tools, ideas, and challenges. While I don’t always think “outside the box,” I build practical solutions with smart, iterative effort. I try, learn, and grow — that's how I work.
+                It highlights my academic foundation and practical knowledge gained through industry-relevant coursework, as well as my internship experience, where I applied data tools to address real-world business challenges. 
               </p>
               <p>
-                I study Computational Business Analytics, where I turn data into decisions using Power BI, Python, and logical reasoning. I enjoy uncovering insights, solving real-world problems, and helping businesses become data-savvy.
-              </p>
-              <p>
-                Outside work, you’ll find me tuning into business podcasts, playing chess with friends, or experimenting with new dishes — they all sharpen different sides of me.
+                More than just a showcase of skills and experience, this portfolio also reflects my approach to learning one that emphasizes curiosity, practical application, and ongoing improvement. 
               </p>
               <p className="italic text-navy font-semibold">
                 This portfolio is a glimpse into how I think, what I build, and why I believe in data-powered decisions.
