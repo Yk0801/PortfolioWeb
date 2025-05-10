@@ -78,7 +78,7 @@ const AboutPage = () => {
                 </a>
 
                 <a 
-                  href="https://www.linkedin.com/in/yuktha-sri-bollina/"
+                  href="https://drive.google.com/file/d/1tsfMxBQUz3fW-v9LDZsgo1_FxA_pM2bg/view?usp=sharing/"
                   className="btn-accent inline-flex items-center px-4 py-2 rounded-md shadow hover:shadow-lg transition"
                   target="_blank"
                   rel="noopener noreferrer"
